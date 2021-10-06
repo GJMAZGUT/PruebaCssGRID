@@ -1,0 +1,36 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    gap: 20px;
+    background-color: #FFFFFF;
+    grid-template: 
+            "divbar divbar divbar divbar divbar divbar" 5%
+            "banner banner banner banner banner banner " 20%
+            "title title title title title title"    10% 
+            "movies movies movies movies movies movies"  auto
+            "movies movies movies movies movies movies"  auto
+            "footer footer footer footer footer footer" 10% /
+               1fr    1fr   1fr    1fr   1fr    1fr; 
+}
+
+.divbar {
+    grid-area: divbar;
+    background-color: antiquewhite;
+}
+.banner {
+    grid-area: banner;
+}
+.title {
+    grid-area: title;
+}
+.movies {
+    grid-area: movies;
+}
+footer {
+    grid-area: footer;
+}
